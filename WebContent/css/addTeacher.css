@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+#teaTable {
+	border: 1px solid rgb(115, 215, 180);
+	margin-top: 50px;
+	width: 300px;
+}
+
+#teaTable tr {
+	margin-top:20px;
+	display: flex;
+	align-content: center;
+	justify-content: space-around;
+}
+
+#teaTable td {
+	height: 50px;
+	border-width: 0;
+}
+
+input {
+	border: 1px solid rgb(115, 215, 180);
+}

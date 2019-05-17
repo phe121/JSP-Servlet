@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+* {
+	margin: 0px;
+	padding: 0px;
+	background-color: rgb(240, 246, 233);
+}
+.operate input{
+	border-width: 0;
+}
+#body {
+	background-color: rgb(240, 246, 233);
+	text-align: center;
+}
+
+#title {
+	margin: auto;
+	padding: 40px;
+	width: 1366px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#title h3 {
+	color: rgb(160, 170, 178);
+}
+
+#title hr {
+	width: 600px;
+	height: 1px;
+	background-color: olive;
+}
+
+#option {
+	margin: auto;
+	padding: auto;
+	width: 1366px;
+	margin-bottom: 10px;
+	display: flex;
+	align-items: flex-start;
+}
+
+#option input {
+	border: black;
+	width: 60px;
+	height: 30px;
+	margin-right: 20px;
+	color: white;
+}
+
+#teaTable {
+	margin: auto;
+	padding: auto;
+	width: 1366px;
+	border-collapse:collapse;
+}
+#teaTable td{
+	 border:1px solid rgb(115,215,180);
+}
+#teaTable tr{
+	 height:40px;
+}
+#bottom {
+	margin: auto;
+	padding: auto;
+	width: 1366px;
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+#bottom input {
+	border: black;
+	width: 60px;
+	height: 30px;
+}
+#massage{
+	width: 100px;
+}
+#inputMassage{
+	width: 500px;
+	display: flex;
+	justify-content: space-between;
+}
+#inputMassage input{
+	border:1px solid rgb(115,215,180);
+}
