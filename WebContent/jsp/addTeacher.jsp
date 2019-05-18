@@ -13,6 +13,7 @@
 <title>新增一个老师</title>
 <link rel="stylesheet" href="../css/showAllTeachers.css">
 <link rel="stylesheet" href="../css/addTeacher.css">
+<script type="text/javascript" src="../js/teacher.js"></script>
 </head>
 <body>
 	<div id="body">
@@ -28,7 +29,7 @@
 			</div>
 		</div>
 		<form action="../AddTeacher?currentPage=<%=currentPage%>"
-			method="post">
+			method="post" name="teacherForm">
 			<table id="teaTable">
 				<tr>
 					<td>id自增</td>
@@ -36,27 +37,43 @@
 				</tr>
 				<tr>
 					<td>姓名</td>
-					<td><input name="name"></td>
+					<td><input name="name" maxlength="20"></td>
 				</tr>
 				<tr>
 					<td>学院</td>
-					<td><input name="college"></td>
+					<td>
+						<select name="college"
+							onchange="fillProfession()" id="college">
+								<option value="">请选择</option>
+						</select>
+					</td>
 				</tr>
 				<tr>
 					<td>专业</td>
-					<td><input name="profession"></td>
+					<td>
+						<select name="profession"  id="profession">
+								<option value="">请选择</option>
+						</select>
+					</td>
 				</tr>
 				<tr>
 					<td>年级</td>
-					<td><input name="grade"></td>
+					<td>
+						<select name="grade">
+							<option value="2015">2015</option>
+							<option value="2016">2016</option>
+							<option value="2017">2017</option>
+							<option value="2018">2018</option>
+						</select>
+					</td>
 				</tr>
 				<tr>
 					<td>薪水</td>
-					<td><input name="salary"></td>
+					<td><input name="salary" type="number" step="0.01" min="0"></td>
 				</tr>
 				<tr>
 					<td>年龄</td>
-					<td><input name="age"></td>
+					<td><input name="age" type="number" min="20" max="60" name="points" style="width: 156px;"></td>
 				</tr>
 				<tr>
 					<td><input type="submit" style="font-size: 20px;"></td>

@@ -51,7 +51,6 @@ function selectTeacher() {
 }
 
 function deleteTeachers() {
-	var currentPageIds = document.getElementsByName("currentPageTheachers");
 	var id = document.getElementsByName("teachers");
 	var currentPage = document.getElementById("currentPage").value;
 	var Ids = 0;

@@ -7,7 +7,7 @@
 }
 
 #teaTable tr {
-	margin-top:20px;
+	margin-top: 20px;
 	display: flex;
 	align-content: center;
 	justify-content: space-around;
@@ -19,5 +19,10 @@
 }
 
 input {
+	border: 1px solid rgb(115, 215, 180);
+}
+
+select {
+	width: 156px;
 	border: 1px solid rgb(115, 215, 180);
 }
